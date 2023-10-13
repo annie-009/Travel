@@ -1,0 +1,622 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/c11d99e0d2.js" crossorigin="anonymous"></script>
+        <style>
+/*--head--*/
+.navbar{
+  background-color:ivory;
+  border-bottom: 3px solid royalblue;
+}
+.icon-bar{
+  background-color: rgb(58, 130, 158);
+}
+.nav.navbar-nav li a{
+  color:royalblue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align:center;
+  border-right: 2px solid lightgrey;
+}
+.nav.navbar-nav li span{
+  color:royalblue
+}
+.nav.navbar-nav li i{
+  color:royalblue;
+}
+.navbar-brand{
+  color:hotpink;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Courier;
+}
+.nav.navbar-nav a:hover{
+  background-color: rgb(193, 222, 240);
+}
+.nav.navbar-nav a:focus{
+  background-color:rgb(191, 224, 245);
+}
+/*---body---*/
+.inner{
+    background-color: #0a223d;
+    border-radius: 3px;
+    padding: 11px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    min-width: 1200px;
+    align-items: inline;
+}
+.inner .inner1{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: left;
+    margin: 0 auto;
+    width: 200px;
+}
+.inputbox{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    background: hsla(0,0%,100%,.1);
+    border-radius: 4px;
+    cursor: pointer;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 5px;
+    position: relative;
+}
+.inner .label{
+    padding: 4px 9px 5px;
+    color: #0084ff;
+    font-size: 12px;
+    line-height: 12px;
+}
+.inner .input{
+    background: none;
+    border: 0;
+    font-family: lato;
+    font-weight: 400;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 9px 4px;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+}
+.btn{
+    align-items: center;
+    display: inline-flex;
+    font-size: 18px;
+    justify-content: center;
+    margin-left: 30px;
+    width: 176px;
+    background-color: #0084ff;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    outline: 0;
+    padding: 9px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.area{
+    margin-left: -20px;
+}
+.checkin{
+    margin-left: -60px;
+}
+.checkout{
+    margin-left: -55px;
+}
+.rg{
+    margin-left: -40px;
+}
+.margin{
+    margin-left: -85px;
+}
+.search{
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.main:hover{
+    background-color: lightsteelblue;
+    border: 3px solid blue;
+}
+/*--footer--*/
+#footer{
+  background-color: ivory;
+  border-top: 3px solid royalblue;
+}
+#footer h3,h4{
+  color: royalblue;
+}
+#icons{
+  text-align:center;
+}
+#icons i{
+  display: inline;
+  font-size: 3rem;
+}
+#follow{
+ text-align: right;
+}
+#follow i{
+  font-size: 3rem;
+  display: inline;
+}
+@media screen and (max-width: 600px){
+  .carousel{
+    width: 350px;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Finding Paradise</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="Aditi.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                       <li><a href=""><span class="glyphicon glyphicon-plane"></span> Flights</a></li>
+                       <li><a href="https://www.irctc.co.in/nget/train-search" target="_blank"><i class="fa fa-train" aria-hidden="true"></i> Trains</a></li>
+                        <li class="active"><a href="#"><i class="fas fa-hotel"></i> Hotels</a></li>
+                        <li><a href="kashish.html"><i class="fas fa-umbrella-beach"></i> Packages</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Account</a>
+                          <ul class="dropdown-menu">
+                              <li class=""><a href="loginForm.html">Login</a></li>
+                              <li class=""><a href="loginForm.html">Sign up</a></li>
+                          </ul>
+                          </li>
+                    </ul>
+                    </div>
+                </div>
+        </nav>
+        <br>
+        <div class="container-fluid bg-info">
+            <a href="#">Home </a>>
+            <a href="#" class="Active"> Hotels and more in Goa</a>
+            <div class="row">
+                <div class="col-md-8"><br><br>
+                    <h1>Hotels, Villas, Apartments and more in Goa</h1>
+                    <p>Showing 50+ results in Goa</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.google.com/maps/@31.018031,75.401169,8z"> <img src="map.jpg" style="height: 30%; width: 100%;"></a>
+                    <br>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="search" class="form-control" name="search" placeholder="Search Location">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </div>
+        <!-----Search----->
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 area">
+                        <div class="inner1 inputBox">
+                            <label for="city" class="label area">CITY, AREA or PROPERTY</label>
+                            <input type="text" class="input" readonly placeholder value="Goa, India">
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin">
+                        <div class="inner1 inputBox">
+                            <label for="checkin" class="label checkin">CHECK-IN:</label>
+                            <input type="text" class="input" readonly placeholder value="Tue, 30 Nov 2021">
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin">
+                        <div class="inner1 inputBox">
+                            <label for="checkout" class="label checkout">CHECK-OUT:</label>
+                            <input type="text" class="input" readonly placeholder value="Thu, 2 Dec 2021">
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin">
+                        <div class="inner1 inputBox">
+                            <label for="guest" class="label rg">ROOM</label>
+                            <input type="text" class="input" readonly placeholder value="1 Room">
+                        </div>
+                    </div>
+                    <div class="search">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----Resort Part----->
+        <div class="container">
+            <h1>Recommended For You..</h1><br>
+            <div class="main row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <!----Images Part-->
+                <div class="col-md-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="radisson1.jpg" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="radisson2.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="radisson3.jpg" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="radisson4.webp" style="height:35%" class="img-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----Center Part----->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Radisson Blu Resort Goa</h2>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"><br>
+                            <p class="text-right">1324 RATINGS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Cavelossim</p>
+                    <p class=" border text-info" style="border: 2px solid skyblue; border-radius: 5px;">Radisson Hotels SGS Safety Protocols</p>
+                    <span class="glyphicon glyphicon-ok"> Free Cancellation till 12 hours before check in</span>
+                    <span class="glyphicon glyphicon-usd"> Breakfast available at extra charges</span>
+                    <br>
+                    <br>
+                        <p class="text-warning">Great Choice! Book 50+ times in last 15 days</p>
+                    </span>
+                </div>
+                <!-----Price Part---->
+                <div class="col-md-3 bg-muted text-right" style="background-color:lightgray">
+                    <br>
+                    <br>
+                    <p class="text-danger">Saves Rs.3,497  <span class="label label-danger">28%</span></p>
+                    <p><strike>Rs.12,600</strike></p>
+                    <h3><b>Rs.9,104</b></h3>
+                    <p>+Rs.1,639 taxes & fees</p>
+                    <p class="text-muted">per night</p><br><br>
+                </div>
+            </div>
+            <br>
+            <div class="main row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <!----Images Part-->
+                <div class="col-md-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="marriott1.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="marriott2.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="marriott3.jpg" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="marriott4.webp" style="height:35%" class="img-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----Center Part----->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Goa Marriott Resort & Spa</h2>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"><br>
+                            <p class="text-right">539 RATINGS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Panjim</p>
+                    <mark>Couple Friendly</mark><br><br>
+                    <p class=" border text-info" style="border: 2px solid skyblue; border-radius: 5px;">Commitment to clean</p>
+                    <span class="glyphicon glyphicon-usd"> Breakfast available at extra charges</span>
+                    <br>
+                    <br>
+                        <p class="text-warning">Great Choice! Book 50+ times in last 15 days</p>
+                    </span>
+                </div>
+                <!-----Price Part---->
+                <div class="col-md-3 bg-muted text-right" style="background-color:lightgray">
+                    <br>
+                    <br>
+                    <p class="text-danger">Saves Rs.1,606  <span class="label label-danger">16%</span></p>
+                    <p><strike>Rs.15,501</strike></p>
+                    <h3><b>Rs.13,895</b></h3>
+                    <p>+Rs.2,501 taxes & fees</p>
+                    <p class="text-muted">per night</p><br><br>
+                </div>
+            </div>
+            <br>
+            <div class="main row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <!----Images Part-->
+                <div class="col-md-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="hilton1.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hilton2.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hilton3.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hilton4.webp" style="height:35%" class="img-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----Center Part----->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Hilton Goa Resort</h2>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"><br>
+                            <p class="text-right">365 RATINGS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Candolim</p>
+                    <mark>Couple Friendly</mark><br><br>
+                    <p class=" border text-info" style="border: 2px solid skyblue; border-radius: 5px;">Hilton Clean Stay</p>
+                    <p class="text-primary">Cleaner Stay from Check-in to Check-out </p>
+                    <span class="glyphicon glyphicon-ok"> Free Cancellation available at extra charges</span><br>
+                    <span class="glyphicon glyphicon-usd"> Breakfast included</span>
+                    <br><br>
+                </div>
+                <!-----Price Part---->
+                <div class="col-md-3 bg-muted text-right" style="background-color:lightgray">
+                    <br>
+                    <br>
+                    <p class="text-danger">Saves Rs.2,909  <span class="label label-danger">29%</span></p>
+                    <p><strike>Rs.14,400</strike></p>
+                    <h3><b>Rs.11,491</b></h3>
+                    <p>+Rs.2,068 taxes & fees</p>
+                    <p class="text-muted">per night</p><br><br>
+                </div>
+            </div>
+            <br>
+            <div class="main row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <!----Images Part-->
+                <div class="col-md-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="holidayinn1.webp" style="height: 35%;" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="holidayinn2.jfif" style="height: 35%;" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="holidayinn3.webp" style="height: 35%;" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="holidayinn4.webp" style="height: 35%;" class="img-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----Center Part----->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Holiday Inn Resort</h2>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"><br>
+                            <p class="text-right">895 RATINGS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Cavelossim</p>
+                    <span class="glyphicon glyphicon-ok"> Free Cancellation till 12 hours before check in</span>
+                    <span class="glyphicon glyphicon-usd"> Breakfast available at extra charges</span>
+                    <br>
+                    <br>
+                        <p class="text-warning">Great Choice! Book 100+ times in last 15 days</p>
+                    </span>
+                </div>
+                <!-----Price Part---->
+                <div class="col-md-3 bg-muted text-right" style="background-color:lightgray">
+                    <br>
+                    <br>
+                    <p class="text-danger">Saves Rs.2,601  <span class="label label-danger">25%</span></p>
+                    <p><strike>Rs.12,600</strike></p>
+                    <h3><b>Rs.9,999</b></h3>
+                    <p>+Rs.1,800 taxes & fees</p>
+                    <p class="text-muted">per night</p><br><br>
+                </div>
+            </div>
+            <br>
+            <div class="main row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <!----Images Part-->
+                <div class="col-md-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="hardrock1.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hardrock2.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hardrock3.webp" style="height:35%" class="img-rounded">
+                            </div>
+                            <div class="item">
+                                <img src="hardrock4.jpg" style="height:35%" class="img-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----Center Part----->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>Hard Rock Hotel Goa</h2>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"><br>
+                            <p class="text-right">2922 RATINGS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Calangute</p>
+                    <mark>Couple Friendly</mark><br><br>
+                    <p class="text-primary">Self Certified by Property</p>
+                    <span class="glyphicon glyphicon-ok"> Free Cancellation till 12 hours before check in</span><br>
+                    <span class="glyphicon glyphicon-usd"> Breakfast included</span>
+                    <br>
+                    <br>
+                        <p class="text-warning">100% Vaccinated Staff</p>
+                    </span>
+                </div>
+                <!-----Price Part---->
+                <div class="col-md-3 bg-muted text-right" style="background-color:lightgray">
+                    <br>
+                    <br>
+                    <p class="text-danger">Saves Rs.1,180  <span class="label label-danger">12%</span></p>
+                    <p><strike>Rs.5,899</strike></p>
+                    <h3><b>Rs.4,719</b></h3>
+                    <p>+Rs.698 taxes & fees</p>
+                    <p class="text-muted">per night</p><br><br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-----About Goa------>
+        <div class="container" style="border: 1px  solid lightgrey; padding: 20px;">
+                <h1>Explore Goa</h1>
+                <p>Goa is the party destination of India known for its beaches, churches and shacks.</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="north goa.webp" class="img-rounded" height="210px" width="210px">
+                        <h3>North Goa</h3>
+                        <p>Best for Family & Couple</p>
+                        <h4 class="text-info"><bold>1312 HOTELS</bold></h4>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="area guide.png" class="img-rounded" height="290px" width="230px">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="calangute.webp" class="img-rounded" height="210px" width="210px">
+                        <h3>Calangute</h3>
+                        <p>Best for Family & Couple</p>
+                        <h4 class="text-info"><bold>345 HOTELS</bold></h4>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="baga.webp" class="img-rounded" height="210px" width="210px">
+                        <h3>Baga</h3>
+                        <p>Best for Family & Couple</p>
+                        <h4 class="text-info"><bold>148 HOTELS</bold></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="footer">
+              <div class="col-md-4" id="follow">
+                <h4> Follow Us On</h4>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="col-md-4" id="icons">
+                <h3>Pay Safely With Us</h3>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+              </div>
+              <div class="col-md-4">
+                <h4><i class="fas fa-plane-departure"></i> Fast Booking</h4>
+                <h4><i class="fas fa-tags"></i> Exciting Deals</h4>
+                <h4><i class="fas fa-portrait"></i> 24/7 Support</h4>
+              </div>
+            </div>
+            </div>
+    </body>
+</html>

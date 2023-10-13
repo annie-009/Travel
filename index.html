@@ -1,0 +1,271 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c11d99e0d2.js" crossorigin="anonymous"></script>
+        <style>
+             body{
+    background-color: lightgray;
+  }
+.navbar{
+  background-color:ivory;
+  border-bottom: 3px solid royalblue;
+}
+.icon-bar{
+  background-color: rgb(58, 130, 158);
+}
+.nav.navbar-nav li a{
+  color:royalblue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align:center;
+  border-right: 2px solid lightgrey;
+}
+.nav.navbar-nav li span{
+  color:royalblue
+}
+.nav.navbar-nav li i{
+  color:royalblue;
+}
+.navbar-brand{
+  color:hotpink;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Courier;
+}
+.nav.navbar-nav a:hover{
+  background-color: rgb(193, 222, 240);
+}
+.nav.navbar-nav a:focus{
+  background-color:rgb(191, 224, 245);
+}
+#footer{
+  background-color: ivory;
+  border-top: 3px solid royalblue;
+}
+#footer h3,h4{
+  color: royalblue;
+}
+#icons{
+  text-align:center;
+}
+#icons i{
+  display: inline;
+  font-size: 3rem;
+}
+#follow{
+ text-align: right;
+}
+#follow i{
+  font-size: 3rem;
+  display: inline;
+}
+@media screen and (max-width: 600px){
+  .carousel{
+    width: 350px;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Finding Paradise</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="Aditi.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                       <li><a href="Kamakshi.html"><span class="glyphicon glyphicon-plane"></span> Flights</a></li>
+                       <li><a href="https://www.irctc.co.in/nget/train-search" target="_blank"><i class="fa fa-train" aria-hidden="true"></i> Trains</a></li>
+                        <li><a href="index.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                        <li><a href="kashish.html"><i class="fas fa-umbrella-beach"></i> Packages</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Account</a>
+                          <ul class="dropdown-menu">
+                              <li class=""><a href="loginForm.html">Login</a></li>
+                              <li class=""><a href="loginForm.html">Sign up</a></li>
+                          </ul>
+                          </li>
+                    </ul>
+                        </div>
+            </div>
+        </nav>
+        <div class="container-fluid" style="background-color: #0a223d; height: 350px;"><br><br>
+            <div class="new" style="background-color: white; height: 150px; margin: 50px 30px; border-radius: 20px;">
+                <h4 class="text-center" style="padding-top: 10px;">Book Domestic and International Hotels Online</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box" style="border: 1px solid lightgrey; height: 70px; width: 240px; border-radius: 20px; margin-left: 50px;">
+                                <label class="text-info"><h6 style="padding-left: 20px;">CITY/HOTEL/AREA</h6></label>
+                                <input type="text" class="form-control" placeholder="Goa">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="box" style="border: 1px solid lightgrey; height: 70px; width: 200px; border-radius: 20px; margin-left: 50px;">
+                                <div class="input-grp">
+                                    <label class="text-info"><h6 style="padding-left: 20px;">CHECK-IN</h6></label>
+                                    <input type="date" class="form-control select-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="box" style="border: 1px solid lightgrey; height: 70px; width: 200px; border-radius: 20px; margin-left: 50px;">
+                                <div class="input-grp">
+                                    <label class="text-info"><h6 style="padding-left: 20px;">CHECK-OUT</h6></label>
+                                    <input type="date" class="form-control select-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="box" style="border: 1px solid lightgrey; height: 70px; width: 240px; border-radius: 20px; margin-left: 50px;">
+                                <div class="input-grp">
+                                    <label class="text-info"><h6 style="padding-left: 20px;">Room</h6></label>
+                                    <input type="number" class="form-control" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" style="width:240px; height:60px; font-size: 18px; border-radius: 40px; margin-top:2vh; margin-left: 520px; background-color: lightgray;"><a href="hotels.html">Search</a></button>
+            </div>
+            <br>
+            <h4 class="text-center"style="color:white">EXPLORE MORE</h4>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row" style="border: 1px  solid lightgrey; padding: 20px 10px; background-image: repeating-linear-gradient(190deg,white,lightgray 30%);">
+                <div class="col-md-3">
+                    <p class="text intro">INTRODUCING</p>
+                    <h2 class="text-primary">MMT LUXE <br> Selections</h2>
+                    <p class="text">Escape to the epitmoze of luxuary, packed<br> with signature amenities and service.</p>
+                    <br><button type="button" class="btn btn-primary btn-lg">Learn More</button>
+                </div>
+                <div class="col-md-3">
+                    <img src="intro1.webp" height="180px" width="220px">
+                    <h3>Discover by Brands</h3>
+                    <p>Taj, Marriott, Oberoi, Hyatt & <br>more..</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="intro2.webp" class="img-rounded" height="180px" width="220px">
+                    <h3>Luxe Villas</h3>
+                    <p>Premium Villas with superlative<br> experience</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="intro3.webp" height="180px" width="220px">
+                    <h3>Discover by Themes</h3>
+                    <p>Explore Luxuary Stays based on<br> your interests..</p>
+                </div>
+            </div>
+        </div>
+        <!----Places-->
+        <br><br>
+        <div class="container" style="background-color: whitesmoke;">
+            <h2 class="text-primary">Some Famous Places</h2>
+            <div class="row" style="border: 1px  solid lightgrey; padding: 20px 10px;">
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="Goa.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b><a href="hotels.html">Goa</a></b></h4>
+                        <p>Hotels, Budget Hotels, Resorts,<br> Best Hotels, North Goa, Villas</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="Jaipur.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Jaipur</b></h4>
+                        <p>Hotels, Resorts, Budget Hotels<br> Best resorts Near Railway Station</p>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="DelhiDT.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Delhi</b></h4>
+                        <p>Hotels, Resorts, Budget Hotels<br> Best resorts Near IGI Airpot</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="BangaloreDT.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Bangalore</b></h4>
+                        <p>Hotels, Resorts, Budget Hotels<br> Near Airpot, Guhantara Resort</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="Shimla.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Shimla</b></h4>
+                        <p>Hotels, Resorts, Budget Hotels<br> Near Mall Road</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="Manali.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Manali</b></h4>
+                        <p>Hotels, Resorts, Budget Hotels<br> Near Mall Road</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="MumbaiDT.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Mumbai</b></h4>
+                        <p>Hotels, Resorts, Couple Hotels<br> Near Mumbai Airpot</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media-left media-top">
+                        <img src="Others.webp" class="media-object img-circle" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Others</b></h4>
+                        <p>Puri Hotels, OYO Delhi, Houseboats,<br> Mahabaleshwar Hotels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row" id="footer">
+              <div class="col-md-4" id="follow">
+                <h4> Follow Us On</h4>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="col-md-4" id="icons">
+                <h3>Pay Safely With Us</h3>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+              </div>
+              <div class="col-md-4">
+                <h4><i class="fas fa-plane-departure"></i> Fast Booking</h4>
+                <h4><i class="fas fa-tags"></i> Exciting Deals</h4>
+                <h4><i class="fas fa-portrait"></i> 24/7 Support</h4>
+              </div>
+            </div>
+            </div>
+                
+    </body>
+</html>

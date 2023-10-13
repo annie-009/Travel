@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c11d99e0d2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Finding Paradise</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="Aditi.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                   <li><a href="Kamakshi.html"><span class="glyphicon glyphicon-plane"></span> Flights</a></li>
+                   <li><a href="https://www.irctc.co.in/nget/train-search" target="_blank"><i class="fa fa-train" aria-hidden="true"></i> Trains</a></li>
+                    <li><a href="index.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="kashish.html"><i class="fas fa-umbrella-beach"></i> Packages</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Account</a>
+                      <ul class="dropdown-menu">
+                          <li class=""><a href="loginform">Login</a></li>
+                          <li class=""><a href="loginform">Sign up</a></li>
+                      </ul>
+                      </li>
+                </ul>
+                    </div>
+                     </div>
+              </nav>
+        <div class="booking-form-box">
+            <div class="container">
+                <form>
+                  <label class="radio-inline text-success">
+                    <input type="radio" name="optradio"><b>One Way</b>
+                  </label>
+                  <label class="radio-inline text-success">
+                    <input type="radio" name="optradio"><b>Roundway Trip</b>
+                  </label>
+                  <label class="radio-inline text-success">
+                    <input type="radio" name="optradio"><b>Multy city</b>
+                  </label>
+                </form>
+              </div>
+            <div class="booking-form">
+                <label><h4 class="text-info"><b>Flying from</b></h4></label>
+                <input type="text" class="form-control" placeholder="City or Airport">
+                <label><h4 class="text-info"><b>Flying to</b></h4></label>
+                <input type="text" class="form-control" placeholder="City or Airport">
+                <div class="input-grp">
+                    <label><h4 class="text-info"><b>Departing</b></h4></label>
+                    <input type="date" class="form-control select-date"> 
+                </div>
+                <div class="input-grp">
+                    <label><h4 class="text-info"><b>Returning</b></h4></label>
+                    <input type="date" class="form-control select-date"> 
+                </div>
+                <br>
+                <div class="input-grp">
+                    <label><h4 class="text-info"><b>Adults</b></h4></label>
+                    <input type="number" class="form-control" value="0"> 
+                </div>
+                <div class="input-grp">
+                    <label><h4 class="text-info"><b>Children</b></h4></label>
+                    <input type="number" class="form-control" value="0"> 
+                </div>
+                <br>
+                <div class="input-grp">
+                    <label><h4 class="text-info"><b>Travel-Class</b></h4></label>
+                    <select class="custom-select">
+                        <option value="1">Select</option>
+                        <option value="2">Economy Class</option>
+                        <option value="3">Business Class</option>
+                        <option value="4">First Class</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="input-grp">
+                    <button type="button" onclick="document.write(Error)" class="bg-primary">Show Flights</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+body{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.futurity.org/wp/wp-content/uploads/2021/07/airplanes-noise-shape-memory-alloys-1600.jpg);
+background-size:cover;
+background-position: center;
+}
+.navbar{
+  background-color:ivory;
+  border-bottom: 3px solid royalblue;
+}
+.icon-bar{
+  background-color: rgb(58, 130, 158);
+}
+.nav.navbar-nav li a{
+  color:royalblue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align:center;
+  border-right: 2px solid lightgrey;
+}
+.nav.navbar-nav li span{
+  color:royalblue
+}
+.nav.navbar-nav li i{
+  color:royalblue;
+}
+.navbar-brand{
+  color:hotpink;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Courier;
+}
+.nav.navbar-nav a:hover{
+  background-color: rgb(193, 222, 240);
+}
+.nav.navbar-nav a:focus{
+  background-color:rgb(191, 224, 245);
+}
+.booking-form-box{
+    max-width: 1000px;
+    border: 5px solid #001830;
+    margin: 5% auto 0;
+}
+.radio-btn{
+    margin: 0 20px;
+}
+.radio-btn .btn{
+    margin:20px 10px 20px 0px;
+    box-shadow:none;
+}
+.radio-btn .btn::after{
+    content:'';
+    height: 15px;
+    width: 15px;
+    top:-2px;
+    left:-1px;
+    background-color: #fff;
+    position:relative;
+    display: inline-block;
+    border:3px solid moccasin;
+    visibility:visible;
+    border-radius:50%;
+}
+.radio-btn span{
+    color:rgb(29, 28, 28);
+    font-size: 15px;
+}
+.booking-form{
+    padding: 0 20px 20px;
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff
+}
+.input::placeholder{
+    color:#033e79;
+}
+.input-grp{
+    width:151px;
+    display:inline-block;
+}
+.form-control{
+    font-size:11px;
+    border-radius: 0;
+    color: rgb(3, 3, 3);
+    box-shadow:none;
+}
+    </style>
+</html>

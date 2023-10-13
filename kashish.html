@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/c11d99e0d2.js" crossorigin="anonymous"></script>
+<style>
+  body{
+    background-color: lightgray;
+  }
+.navbar{
+  background-color:ivory;
+  border-bottom: 3px solid royalblue;
+}
+.icon-bar{
+  background-color: darkslategray;
+}
+.nav.navbar-nav li a{
+  color:rgb(160, 243, 222);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align:center;
+  border-right: 2px solid lightgrey;
+}
+.nav.navbar-nav li span{
+  color:rgb(58, 130, 158)
+}
+.nav.navbar-nav li i{
+  color:rgb(58, 130, 158);
+}
+.navbar-brand{
+  color:hotpink;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Courier;
+}
+.nav.navbar-nav a:hover{
+  background-color: rgb(193, 222, 240);
+}
+.nav.navbar-nav a:focus{
+  background-color:rgb(191, 224, 245);
+}
+.carousel {
+  width: 600px;
+}
+.jumbotron {
+   height: 40vh;
+}
+.media-heading{
+  font-weight: bold;
+  color: black;
+}
+.media-body{
+  font-weight: bold;
+  color: darkslategrey;
+}
+#IntPack img{
+  width: 150px;
+}
+#header{
+  background-image:  url("https://victoria-travels.com/Content/images/header_pkg.png");
+  background-size: cover ;
+}
+#header h1,h2{
+  color:red;
+}
+#domestic{
+  background-color:  rgb(223, 223, 238);
+  border-radius: 5px;
+}
+#domestic img{
+  width:100% ;
+   border-radius:5px;
+}
+#footer{
+  background-color: ivory;
+  border-top: 3px solid royalblue;
+}
+#footer h3,h4{
+  color: royalblue;
+}
+#icons{
+  text-align:center;
+}
+#icons i{
+  display: inline;
+  font-size: 3rem;
+}
+#follow{
+ text-align: right;
+}
+#follow i{
+  font-size: 3rem;
+  display: inline;
+}
+
+</style>
+</head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Finding Paradise</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="Aditi.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                   <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Flights</a></li>
+                   <li><a href="https://www.irctc.co.in/nget/train-search" target="_blank"><i class="fa fa-train" aria-hidden="true"></i> Trains</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="kashish.html"><i class="fas fa-umbrella-beach"></i> Packages</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Account</a>
+                      <ul class="dropdown-menu">
+                          <li class=""><a href="loginForm.html">Login</a></li>
+                          <li class=""><a href="loginForm.html">Sign up</a></li>
+                      </ul>
+                      </li>
+                </ul>
+                </div>
+                </div>
+              </nav>
+              <div class="jumbotron" id="header">
+                  <div class="container"><br>
+                <h1>Holiday Tour Packages!</h1>
+                <h2>I want Holiday in.......</h2>
+                <br>
+                 </div>
+            </div>
+ 
+      <div class="container-fluid">
+      <div class="row" id="domestic">
+        <h1 class="">Domestic Fixed Departure Tour Packages</h1>
+        <div class="col-md-3">
+          <a href="#"><img src="https://www.tourmyindia.com/socialimg/srinagar-tourist-places.jpg" alt="" >
+          <h4 class="caption">Srinagar</h4></a>
+          <p>4 Nights / 5 Days<br> Starting from Rs.18,500</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://i0.wp.com/myvigour.com/wp-content/uploads/2017/12/Kerala-tour-packages.jpg" alt="">
+            <h4 class="caption">Kerala</h4>
+          </a><p>4 Nights / 5 Days<br>Starting from Rs.23,999</p>
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://www.andbeyond.com/wp-content/uploads/sites/5/nepal-village.jpg" alt="">
+          <h4 class="caption">Nepal</h4></a>
+          <p>4 Nights / 5 Days<br>Starting from Rs.30,999</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="https://www.bbc.com/travel/article/20120119-travelwise-10-sites-of-religious-pilgrimage">
+            <img src="https://stays.tripzilla.com/img/page/microsite/the-andaman-resort-langkawi/main-banner-new.jpg" alt="" >
+          <h4 class="caption">Andaman</h4></a>
+          <p>4 Nights / 5 Days<br>Rs.32,999</p>
+        </div>
+        
+      </div>
+    
+      <div class="row" id="domestic">
+        <h1 class="">Road Trip Tour Packages</h1>
+        <div class="col-md-3">
+          <a href="#"><img src="https://1.bp.blogspot.com/-mrpxOlnNbTQ/U9IQrINJgPI/AAAAAAAABm8/dg0BgzyDyUA/s1600/100_7300.JPG" alt="" >
+          <h4 class="caption">Nainital</h4></a>
+          <p>2 Nights / 3 Days<br> Starting from Rs.6,999</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="http://www.theearthsafari.com/upload/1444655672_dears-at-jim-corbett-national-park.jpg" alt="">
+          <h4 class="caption">Jim Corbett</h4>
+          </a><p>2 Nights / 3 Days<br>Starting from Rs.7,999</p>
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1500,h_844,r_0,c_crop,q_80,fl_progressive/w_1500,c_fit,f_auto/neemrana-fort-palace---15th-century-delhi-jaipur-highway/Facade_Premises__Neemrana_Fort_Palace__palace_hotel_in_Rajasthan_13_j7blen" alt="">
+          <h4 class="caption">Neemrana</h4></a>
+          <p>2 Nights / 3 Days<br>Starting from Rs.8,499</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="https://www.bbc.com/travel/article/20120119-travelwise-10-sites-of-religious-pilgrimage">
+            <img src="https://static.toiimg.com/photo/65166202/shiva.jpg?width=748&resize=4" alt="" >
+          <h4 class="caption">Sariska</h4></a>
+          <p>2 Nights / 3 Days<br>Starting from Rs.9,499</p>
+          
+        </div>
+        
+      </div>
+     
+      <div class="row" id="domestic">
+        <h1 class="">Solo Trip Tour Packages</h1>
+        <div class="col-md-3">
+          <a href="#"><img src="https://www.tourmyindia.com/socialimg/srinagar-tourist-places.jpg" alt="" >
+          <h4 class="caption">Kashmir</h4></a>
+          <p>4 Nights / 5 Days<br> Starting from Rs.29,999</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://i0.wp.com/myvigour.com/wp-content/uploads/2017/12/Kerala-tour-packages.jpg" alt="">
+          <h4 class="caption">Kerala</h4>
+          </a><p>5 Nights / 6 Days<br>Starting from Rs.35,999</p>
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://stays.tripzilla.com/img/page/microsite/the-andaman-resort-langkawi/main-banner-new.jpg" alt="">
+          <h4 class="caption">Andaman</h4></a>
+          <p>5 Nights / 6 Days<br>Starting from Rs.49,499</p>
+          
+        </div>
+ 
+        <div class="col-md-3">
+          <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.o_WtksrYUDLjLmTvOfNnRAHaEC&pid=Api&P=0&w=293&h=160" alt="">
+          <h4 class="caption">Leh-Ladakh</h4></a>
+          <p>5 Nights / 6 Days<br>Starting from Rs.59,499</p>
+          
+        </div>
+        
+      </div>
+      <div class="row" id="IntPack">
+        <h1 class="">International Fixed Departure Tour Package</h1>
+          <div class="col-md-4" >
+            <div class="media">
+              <br>
+              <div class="media-left">
+              <img src="https://i.ytimg.com/vi/r3GeypE4FPY/maxresdefault.jpg" alt="" class="media-object">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Sri Lanka</h4>
+                 <p>6 Nights / 7 Days.<br>Starting from Rs.49,999</p>
+              </div>
+              <br>
+            </div>
+          </div>
+            
+          <div class="col-md-4">
+            <div class="media">
+              <br>
+              <div class="media-left">
+              <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/guest-area-with-golden-sunrise-at-andbeyond-bateleur-camp-on-a-luxury-kenya-safari1.jpg" class="media-object" alt="" >
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Kenya</h4>
+                
+                 <p>2 Nights / 3 Days<br>Starting from Rs.1,06,088</p>
+              </div>
+              <br>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="media">
+              <br>
+              <div class="media-left">
+              <img src="https://www.planetware.com/wpimages/2020/01/germany-in-pictures-beautiful-places-to-photograph-speicherstadt-hamburg.jpg" alt="" class="media-object">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Germany</h4>
+                
+                 <p>11 Nights / 12 Days<br> Starting from Rs.1,55,199</p>
+              </div>
+              <br>
+            </div>
+          </div>
+     </div>
+          <div class="row" id="footer">
+            <div class="col-md-4" id="follow">
+              <h4> Follow Us On</h4>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="col-md-4" id="icons">
+              <h3>Pay Safely With Us</h3>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-amex"></i>
+            </div>
+            <div class="col-md-4">
+              <h4><i class="fas fa-plane-departure"></i> Fast Booking</h4>
+              <h4><i class="fas fa-tags"></i> Exciting Deals</h4>
+              <h4><i class="fas fa-portrait"></i> 24/7 Support</h4>
+            </div>
+          </div>
+          </div>
+</body>
+</html>
